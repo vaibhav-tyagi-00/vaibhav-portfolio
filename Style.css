@@ -233,3 +233,14 @@ section{
   color: #ddd;
   transition: 0.3s;
 }
+
+.about a:hover{
+  color: #000;
+  background-color: #00f5c4dd;
+  border: 2px solid #00f5c4dd;
+  transform: translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+
+
