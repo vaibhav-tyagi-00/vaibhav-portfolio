@@ -60,7 +60,7 @@ header{
   transition: 0.3s ease;
 }
 
-.nav-links a:active{
+.nav-links a:hover{
   color: #00f5c4dd;
 }
 
