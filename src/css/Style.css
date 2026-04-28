@@ -15,7 +15,7 @@ body{
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;  
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 header{
@@ -142,12 +142,17 @@ section{
 
 .home{
   display: flex;
-  gap: 20%;
 }
 
 .hero{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text h3{
+  color: #ddd;
 }
 
 .hero-text h1{
@@ -213,6 +218,16 @@ section{
   .hero{
     flex-direction: column;
   }
+  .hero-text{
+    order: 1;
+  }
+  .hero-image{
+    order: 2;
+    margin-top: 5%;
+  }
+  .hero-buttons{
+    order: 3;
+  }
 }
 
 .about{
@@ -240,4 +255,15 @@ section{
   border: 2px solid #00f5c4dd;
   transform: translateY(-2px);
   box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input{
+  width: 20vw;
+  height: 4vh;
+  margin: 1% 0;
 }

@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Hi, my name is Vaibhav and I am a frontend developer.">
+  <meta name="description" content="Vaibhav Tyagi's portfolio website showcasing his skills and projects as a frontend developer.">
   <title>Vaibhav|Portfolio</title>
   <link rel="stylesheet" href="src/css/Style.css">
-  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 <body>
 
@@ -44,42 +43,46 @@
 
       <div class="hero">
 
-        <div class="hero-text">
+        <div class="container">
 
-          <p id="hero-p">Hi, I am</p>
-          <h1>Vaibhav Tyagi</h1>
-          <p class="role">Frontend Developer</p>
-          <p class="description">
-            I build responsive and interactive websites using HTML, CSS and JavaScript.
-          </p>
+          <div class="hero-text">
 
-        </div>
+            <h3>Hi, I am</h3>
+            <h1>Vaibhav Tyagi</h1>
+            <h2 class="role">Frontend Developer</h2>
+            <p class="description">
+              I build responsive and interactive websites using HTML, CSS and JavaScript.
+            </p>
+
+          </div>
         
-        <div class="hero-buttons">
+          <div class="hero-buttons">
 
-          <a href="#Projects" id="Projects">View Projects</a>
-          <a href="#Contact">Contact Me</a>
+            <a href="#Projects" id="Projects">View Projects</a>
+            <a href="#Contact">Contact Me</a>
 
-        </div>
-      
-      </div>
-      
+          </div>
+
+        </div>      
 
         <div class="hero-image">
           <img
             src="src/assets/images/Profile.webp" 
             alt="Profile"
-            width="400px"
-            height="400px"
+            width="300px"
+            height="300px"
             loading="lazy">
         </div>
+
+      </div>        
 
     </section>
 
     <section id="About" class="about">
       <h2>About Me</h2>
       <p>
-        Hi, my name is Vaibhav Tyagi. I am a passionate frontend developer.
+        Hi, my name is Vaibhav Tyagi. I am a passionate frontend developer currently pursuing my studies in bachelor's of computer applications. I build clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+        I always learn new technologies and improve my skills. I want to be a full-stack developer and work on real-world projects.
       </p>
       <a href="src/assets/documents/Vaibhav_Tyagi_Resume.pdf" download class="resume-btn">Download Resume</a>
     </section>
@@ -94,11 +97,36 @@
     </section>
 
     <section id="Projects">
+      <figure>
+        <figcaption>Personal portfolio website</figcaption>
+      </figure>
 
+      <figure>
+        <figcaption>Weather app UI</figcaption>
+      </figure>
+      
+      <figure>
+        <figcaption>Landing Page</figcaption>
+      </figure>
     </section>   
 
     <section id="Contact">
-      <form action="#" method="get"></form>
+        <h2>Hire Me!</h2>
+
+      <form class="contact">
+
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="num">Mobile : </label>
+        <input type="tel" name="number" id="num" required>
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" required>
+
+        <input type="submit" value="Submit">
+        
+      </form>
     </section>
 
   </main>
